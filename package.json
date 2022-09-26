@@ -1,0 +1,18 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Test task for WelbeX. It is necessary to develop a table in the Single Page Application format on React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "SPA",
+    "express",
+    "test",
+    "task"
+  ],
+  "author": "Georgii Galechyan <galechyan1991@gmail.com>",
+  "license": "ISC"
+}
