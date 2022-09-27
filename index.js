@@ -1,13 +1,13 @@
 import dotenv from 'dotenv'
 dotenv.config()
+const PORT = process.env.PORT
 
 import express from 'express'
+import { router as testObjRoutes } from './routes/testObj.routes.js'
+
 const app = express()
 
-app.get('/', function (req, res) {
-  res.send(`Hello world`)
-})
+app.use(express.json())
+app.use('/api', testObjRoutes)
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Example app listening at http://localhost:${process.env.PORT}`)
-})
+app.listen(PORT, () => console.log(`Server listening on port:${PORT}`))
