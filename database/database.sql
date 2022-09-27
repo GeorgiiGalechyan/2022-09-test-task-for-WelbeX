@@ -1,4 +1,4 @@
-create TABLE test_obj(
+CREATE TABLE testObj(
   id SERIAL PRIMARY KEY,
   date_of DATE,
   title VARCHAR(255),
